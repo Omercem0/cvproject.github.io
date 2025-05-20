@@ -1,0 +1,345 @@
+/* Reset ve Genel Stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-color: #ecf0f1;
+    --background-color: #1a1a1a;
+    --section-bg: #2d2d2d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Stili */
+.header {
+    background-color: var(--primary-color);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.profile-image {
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--accent-color);
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header .title {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* Bölüm Stilleri */
+.section {
+    padding: 80px 0;
+    background-color: var(--section-bg);
+    margin: 20px 0;
+}
+
+.section h2 {
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Eğitim ve Deneyim Stilleri */
+.education-item,
+.experience-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.education-item h3,
+.experience-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.institution,
+.company,
+.date {
+    color: #bdc3c7;
+    margin-bottom: 5px;
+}
+
+.experience-item ul {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+/* Yetenekler Stili */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skill-name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: var(--secondary-color);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    background-color: var(--accent-color);
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+/* Projeler Stili */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-item {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* İletişim Stili */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-item {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: var(--accent-color);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+}
+
+/* Footer Stili */
+.footer {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* İlgi Alanları Stili */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.interest-item {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: translateY(-5px);
+}
+
+.interest-item i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.interest-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.interest-item p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Dil Yetkinlikleri Stili */
+.language-skills {
+    margin-bottom: 40px;
+    background-color: var(--primary-color);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.language-skills h3 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.language-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    min-width: 100px;
+}
+
+.language-level {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.level-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
+
+.level-dot.active {
+    background-color: var(--accent-color);
+}
+
+.level-text {
+    margin-left: 15px;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+.skills-subtitle {
+    color: var(--accent-color);
+    margin: 30px 0 20px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .header {
+        padding: 60px 0;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header .title {
+        font-size: 1.2rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .language-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .language-level {
+        width: 100%;
+    }
+} 
